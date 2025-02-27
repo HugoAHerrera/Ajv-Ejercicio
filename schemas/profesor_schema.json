@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "nombre": { "type": "string" },
+        "departamento": { "type": "string" },
+        "tiene_grado": { "type": "boolean" },
+        "tiene_master": { "type": "boolean" },
+        "tiene_doctorado": { "type": "boolean" },
+        "años_docencia": { "type": "integer", "minimum": 0 },
+        "años_en_universidad": { "type": "integer", "minimum": 0 },
+        "asignaturas_impartidas": {
+            "type": "array",
+            "items": { "type": "string" }
+        }
+    },
+    "required": ["nombre", "departamento", "tiene_grado", "tiene_master", "tiene_doctorado", "años_docencia", "años_en_universidad", "asignaturas_impartidas"]
+}

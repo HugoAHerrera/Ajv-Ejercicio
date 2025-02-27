@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "nombre": { "type": "string" },
+        "ubicación": { "type": "string" },
+        "grados_ofrecidos": { "type": "integer", "minimum": 1 },
+        "cantidad_estudiantes": { "type": "integer", "minimum": 1 },
+        "facultades": {
+            "type": "array",
+            "items": { "type": "string" }
+        }
+    },
+    "required": ["nombre", "ubicación", "grados_ofrecidos", "cantidad_estudiantes", "facultades"]
+}
