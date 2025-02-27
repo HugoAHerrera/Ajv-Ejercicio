@@ -4,13 +4,17 @@
 Este proyecto utiliza **Node.js**, **Express** y **AJV** para validar datos JSON de **profesores** y **universidades** mediante peticiones HTTP **POST**.  
 
 Instala las dependencias: npm install
+
 Inicia el servidor: node server.js
 
 Validar un Profesor
+
 Método: POST
+
 URL: http://localhost:3000/validate/profesor
+
 Ejemplo cuerpo (Body - raw - JSON):
-json
+
 {
     "nombre": "Dr. Juan Pérez",
     "departamento": "Matemáticas",
@@ -21,14 +25,21 @@ json
     "años_en_universidad": 10,
     "asignaturas_impartidas": ["Álgebra", "Cálculo"]
 }
+
 Respuestas esperadas:
+
 200 OK → ✅ JSON válido
+
 400 Bad Request → ❌ JSON incorrecto
 
 Validar una Universidad
+
 Método: POST
+
 URL: http://localhost:3000/validate/universidad
+
 Ejemplo cuerpo (Body - raw - JSON):
+
 {
     "nombre": "Ceu San Pablo",
     "ubicación": "Madrid, España",
@@ -36,6 +47,9 @@ Ejemplo cuerpo (Body - raw - JSON):
     "cantidad_estudiantes": 15000,
     "facultades": ["Ingeniería", "Derecho", "Artes"]
 }
+
 Respuestas esperadas:
+
 200 OK → ✅ JSON válido
+
 400 Bad Request → ❌ JSON incorrecto
